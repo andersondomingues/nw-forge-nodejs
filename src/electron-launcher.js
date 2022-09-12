@@ -11,10 +11,23 @@ function urlFromComponents ({pathname = '/', protocol = 'https:', ...props} = {}
 }
 
 function createWindow () {
+
+  var splash = new BrowserWindow({
+    width: 500, 
+    height: 300, 
+    transparent: false, 
+    frame: false, 
+    alwaysOnTop: true 
+  });
+
+  splash.loadFile('splash-screen/Splash.html');
+  splash.center();
+
   // Create the browser window.
   const mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
+    show: false,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
     }
@@ -28,14 +41,17 @@ function createWindow () {
     protocol: 'file:',
     slashes: true
   });
+
   mainWindow.loadURL(startUrl);
+  mainWindow.title = "";
+  // mainWindow.setIcon();
+  mainWindow.webContents.openDevTools(); // open dev tools 
+  mainWindow.setMenu(null);
 
-
-   // Open the DevTools.
-   mainWindow.webContents.openDevTools();
-
-  // Open the DevTools.
-  // mainWindow.webContents.openDevTools()
+  setTimeout(function () {
+    splash.close();
+    mainWindow.show();
+  }, 5000);
 }
 
 // This method will be called when Electron has finished
@@ -56,6 +72,7 @@ app.whenReady().then(() => {
 // explicitly with Cmd + Q.
 app.on('window-all-closed', function () {
   if (process.platform !== 'darwin') app.quit()
+
 })
 
 // In this file you can include the rest of your app's specific main process

@@ -1,0 +1,17 @@
+.footer {
+  background-color: #3c3c3b;
+  width: 100%;
+  border-top: 5px solid #CD4342;
+  position: fixed;
+  bottom: 0px;
+}
+
+.rights {
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  color: #eee;
+  font-size: 14px;
+  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+}
