@@ -1,5 +1,5 @@
 // import logo from './logo.svg';
-import './Home.module.css';
+import './Help.module.css';
 
 import Header from '../../components/header/Header.js';
 import Footer from '../../components/footer/Footer.js';
@@ -8,15 +8,15 @@ import React from 'react';
 
 import locdb from '../../libs/localization.js';
 
-const Home = () => {
+const Help = () => {
   return (
     <div className="App">
       <Header/>
       <Navigator />
       <form>
-      <h1>{locdb.navigatorHome}</h1>
+      <h1>{locdb.navigatorHelp}</h1>
       <p>
-      home home home home home home home home home home home home home home home home home home home home 
+      HELP HELP HELPH LEPLH EPL
       </p>
       </form>
       <Footer />
@@ -24,4 +24,4 @@ const Home = () => {
   );
 }
 
-export default Home;
+export default Help;

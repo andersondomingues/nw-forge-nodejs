@@ -1,27 +1,29 @@
 // import logo from './logo.svg';
-import './Home.module.css';
+import './Configuration.module.css';
 
 import Header from '../../components/header/Header.js';
 import Footer from '../../components/footer/Footer.js';
 import Navigator from '../../components/navigator/Navigator.js';
-import React from 'react';
 
 import locdb from '../../libs/localization.js';
 
-const Home = () => {
+const Configuration = () => {
   return (
     <div className="App">
       <Header/>
       <Navigator />
       <form>
-      <h1>{locdb.navigatorHome}</h1>
-      <p>
-      home home home home home home home home home home home home home home home home home home home home 
-      </p>
+        <h1>{locdb.navigatorConfiguration}</h1>
+        <fieldset>
+          <legend>{locdb.configurationLanguage}</legend>
+        </fieldset>
+        <p>
+        configuration configuration configuration configuration configuration configuration configuration configuration 
+        </p>
       </form>
       <Footer />
     </div>
   );
 }
 
-export default Home;
+export default Configuration;

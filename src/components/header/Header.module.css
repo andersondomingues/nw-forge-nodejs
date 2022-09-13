@@ -1,9 +1,9 @@
 .header {
   background: #fff;
-  border-top: 1px solid lightgray;
   height: 60px;
   display: flex;
   position: fixed;
+  top:0;
   width: 100%;
   flex: 1;
   flex-direction: row;
@@ -42,10 +42,19 @@
   display: block;
 }
 
+.menu nav {
+  padding: 0px;
+  margin: 0px; 
+  border: 0px;
+  width: 100%;
+}
+
 .menu ul {
   border: 0px;
   padding: 0px;
   margin: 0px;
+  margin-left: 60px;;
+
   width: 100%;
   list-style: none;
   display: flex;

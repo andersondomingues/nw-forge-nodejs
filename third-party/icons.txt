@@ -1,0 +1,25 @@
+Acknowledgement and Attributions
+
+Icons:
+- The sword icon from the Character screen is designed by Royyan Wijaya from Flaticon.
+- The shield icon from the Character screen is designed by Ardiansyah from Flaticon.
+- The helmet icon from the Character screen is designed by Those Icons from Flaticon.
+- The armour icon from the Character screen is designed by Freepik from Flaticon.
+- The glove icon from the Character screen is designed by Smashicons from Flaticon.
+- The boot icon from the Character screen is designed by muhammad atho' from Flaticon.
+- The gem icon (enchantments) from the Character screen is designed by Freepik from Flaticon.
+- The vase icon (artifact, secondaries) from the Character screen is designed by Freepik from Flaticon.
+- The crown icon (artifact, primary) from the Character screen is designed by Freepik from Flaticon.
+- The gem-2 icon (other enchantments 2) by Icons8 (https://icons8.com).
+- The jewel-2 icon (other enchantments 3) by Icons8 (https://icons8.com).
+- The shirt icon by Icons8 (https://icons8.com).
+- The shorts icon by Icons8 (https://icons8.com).
+- The ring icon by Icons8 (https://icons8.com).
+- The belt icon by Icons8 (https://icons8.com).
+- The necklace icon by Icons8 (https://icons8.com).
+
+
+
+
+ 
+  
