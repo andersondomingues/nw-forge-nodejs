@@ -1,6 +1,7 @@
 Acknowledgement and Attributions
 
 Icons:
+- The USA and Brazil flags from the upper bar are designed by Dighital from Flaticon.
 - The sword icon from the Character screen is designed by Royyan Wijaya from Flaticon.
 - The shield icon from the Character screen is designed by Ardiansyah from Flaticon.
 - The helmet icon from the Character screen is designed by Those Icons from Flaticon.

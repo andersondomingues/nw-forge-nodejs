@@ -38,7 +38,6 @@
 .menu {
   margin-left: 30px;
   height: 100%;
-  width: 300px;
   display: block;
 }
 
@@ -81,4 +80,15 @@
 
 .menu ul li a:hover {
   color: #ad124f;
+}
+
+img {
+  width: 24px;
+  margin:2px;
+  display: inline;
+}
+
+img:hover {
+  opacity: 50%;
+  cursor: pointer;
 }

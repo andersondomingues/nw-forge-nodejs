@@ -20,7 +20,7 @@ function createWindow () {
     alwaysOnTop: true 
   });
 
-  splash.loadFile('splash-screen/Splash.html');
+  splash.loadFile('splash.html');
   splash.center();
 
   // Create the browser window.

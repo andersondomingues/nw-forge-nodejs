@@ -20,11 +20,11 @@ root.render(
     <Router>
       <Routes basename="index.html">
         <Route exact path="/" element={<Home />}/>
-        <Route exact path="/Character" element={<Character />}/>
-        <Route exact path="/File" element={<File />}/>
-        <Route exact path="/Configuration" element={<Configuration />}/>
-        <Route exact path="/Help" element={<Help />}/>
-        <Route exact path="*" element={<Home />} />
+        <Route path="/Character" element={<Character />}/>
+        <Route path="/File" element={<File />}/>
+        <Route path="/Configuration" element={<Configuration />}/>
+        <Route path="/Help" element={<Help />}/>
+        <Route path="*" element={<Home />} />
       </Routes>
     </Router>
   </React.StrictMode>

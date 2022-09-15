@@ -3,11 +3,17 @@ import LocalizedStrings from 'react-localization';
 
 let locdb = new LocalizedStrings({
  en:{
-    navigatorHome: "Home",
+    headerHome: "Home",
+    headerFile:"File",
+    headerConfiguration: "Configuration",
+    headerHelp:"Help",
+    headerDiscord: "Discord",
+
     navigatorCharacter: "Character",
-    navigatorFile:"File",
-    navigatorConfiguration: "Configuration",
-    navigatorHelp:"Help",
+    navigatorPowers: "Powers",
+    navigatorBoons: "Boons",
+    navigatorCompanions: "Companions",
+    navigatorMounts: "Mounts",
     configurationLanguage: "Language",
     fileImport: "Import",
     fileExport: "Export",
@@ -22,11 +28,17 @@ let locdb = new LocalizedStrings({
     characterOtherEnchantments: "Other Enchant."
  },
  pt: {
-    navigatorHome: "Início",
+    headerHome: "Início",
+    headerFile:"Arquivo",
+    headerConfiguration: "Configuração",
+    headerHelp:"Ajuda",
+    headerDiscord: "Discord",
+
     navigatorCharacter: "Personagem",
-    navigatorFile:"Arquivo",
-    navigatorConfiguration: "Configuração",
-    navigatorHelp:"Ajuda",
+    navigatorPowers: "Poderes",
+    navigatorBoons: "Dádivas",
+    navigatorCompanions: "Companheiros",
+    navigatorMounts: "Montarias",
     configurationLanguage: "Idioma",
     fileImport: "Importar",
     fileExport: "Exportar",
