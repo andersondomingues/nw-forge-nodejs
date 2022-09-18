@@ -106,10 +106,6 @@ table{
   padding-right: 10px;
 }
 
-table tr{
-  /* border-bottom: 1px lightgray solid; */
-}
-
 th{
   font-weight: 200;
   font-size: 12px;
@@ -133,8 +129,4 @@ td img{
 fieldset{
   border: 0px;
   background: #eee;
-}
-
-legend {
-
 }
