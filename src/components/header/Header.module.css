@@ -80,6 +80,7 @@
 
 .menu ul li a:hover {
   color: #ad124f;
+  text-decoration: underline;
 }
 
 img {

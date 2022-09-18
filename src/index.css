@@ -5,6 +5,7 @@ html, body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/** forms **/
 form {
   margin-top:100px;
   padding: 10px;
@@ -46,4 +47,94 @@ form input[type=button]:hover, form button:hover {
   cursor: pointer;
 } 
 
+/** tables **/
+table{
+  margin:0px;
+  border:0px;
+  padding:0px;
+  border-spacing: 0px;
+  border-collapse: collapse;
+  display: table-cell;
+  padding-right: 10px;
+}
 
+th{
+  font-weight: 200;
+  font-size: 12px;
+  background-color: black;
+  color: white;
+  padding: 3px;
+  text-align: center;
+}
+
+td{
+  padding: 3px;
+  font-size: 11px;
+}
+
+td img{
+  width:20px;
+  vertical-align:middle;
+  margin-right:5px;
+}
+
+form input, form select{
+  height: 20px;
+  outline: none;
+}
+
+form input:hover, form select:hover{
+  cursor: pointer;
+}
+
+form * input [type=number]{
+  width: 5px;
+}
+
+form select{
+  width:150px;
+  border: 1px solid lightgray;
+}
+
+table{
+  margin:0px;
+  border:0px;
+  padding:0px;
+  border-spacing: 0px;
+  border-collapse: collapse;
+  display: table-cell;
+  padding-right: 10px;
+}
+
+table tr{
+  /* border-bottom: 1px lightgray solid; */
+}
+
+th{
+  font-weight: 200;
+  font-size: 12px;
+  background-color: black;
+  color: white;
+  padding: 3px;
+  text-align: center;
+}
+
+td{
+  padding: 3px;
+}
+
+td img{
+  width:20px;
+  vertical-align:middle;
+  margin-right:5px;
+}
+
+/** fieldset section **/
+fieldset{
+  border: 0px;
+  background: #eee;
+}
+
+legend {
+
+}

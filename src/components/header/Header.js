@@ -11,21 +11,33 @@ import usaIcon from '../../assets/icons/flag-usa.png';
 
 const Header = () => {
 
+  const PT_BR = 'pt';
+  const EN_US = 'en';
+
   const [currentLocale, setCurrentLocale] = useState(locdb.getLanguage());
 
   const braClick = () => {
-    locdb.setLanguage('pt');
-    setCurrentLocale('pt');
+    if (currentLocale !== PT_BR) {
+      locdb.setLanguage(PT_BR);
+    }
+    setCurrentLocale(PT_BR);
   }
 
   const usaClick = () => {
-    locdb.setLanguage('en');
-    setCurrentLocale('us');
+
+    if (currentLocale !== EN_US) {
+      locdb.setLanguage(EN_US);
+    }
+    setCurrentLocale(EN_US);
+  }
+
+  const switchStyle = (navData) => {
+    return navData.isActive ? style.linkActive : 'none';
   }
 
   return (
     <div className={style.header}>
-      <a href="/" className={style.linkActive}>
+      <a href="/">
         <img className={style.logo} src={logo} alt="solartech logo" />
       </a>
       <h1>
@@ -38,11 +50,11 @@ const Header = () => {
             <img src={braIcon} alt="" title="Português do Brasil" onClick={braClick}/>
             <img src={usaIcon} alt="" title="American English" onClick={usaClick} />
           </li>
-          <li><NavLink activeClassName={style.linkActive} to="/Discord">{locdb.headerDiscord}</NavLink></li>
-          <li><NavLink activeClassName={style.linkActive} to="/Help">{locdb.headerHelp}</NavLink></li>
-          <li><NavLink activeClassName={style.linkActive} to="/Configuration">{locdb.headerConfiguration}</NavLink></li>
-          <li><NavLink activeClassName={style.linkActive} to="/File">{locdb.headerFile}</NavLink></li>
-          <li><NavLink activeClassName={style.linkActive} to="/Home">{locdb.headerHome}</NavLink></li>          
+          <li><NavLink className={switchStyle} to="/Discord">{locdb.headerDiscord}</NavLink></li>
+          <li><NavLink className={switchStyle} to="/Help">{locdb.headerHelp}</NavLink></li>
+          <li><NavLink className={switchStyle} to="/Configuration">{locdb.headerConfiguration}</NavLink></li>
+          <li><NavLink className={switchStyle} to="/File">{locdb.headerFile}</NavLink></li>
+          <li><NavLink className={switchStyle} to="/Home">{locdb.headerHome}</NavLink></li>          
         </ul>
       </nav>
     </div>
